@@ -1,0 +1,15 @@
+# Auto-detect text files and normalize line endings
+* text=auto
+
+# Treat common Unity text files as text
+*.cs text
+*.shader text
+*.asmdef text
+*.meta text
+*.txt text
+
+# Keep binary assets as binary by default (LFS will be enabled for large assets below)
+# LFS-tracked patterns will be added by `git lfs track`.
+
+# Ensure Unity YAML scenes/prefabs remain consistent
+Assets/** text eol=lf
